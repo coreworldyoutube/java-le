@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Java Experiment Lab</title>
+  <style>
+    :root { color-scheme: dark; --bg:#101827; --panel:#182438; --text:#edf3fb; --muted:#a9b8ca; --accent:#79c7ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; min-height:100vh; background:radial-gradient(ellipse at top,#203a56 0,var(--bg) 58%); color:var(--text); font-family:system-ui,-apple-system,"Segoe UI",sans-serif; line-height:1.7; }
+    main { width:min(900px, calc(100% - 32px)); margin:0 auto; padding:72px 0; }
+    .eyebrow { color:var(--accent); font-size:.85rem; font-weight:700; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { margin:.35rem 0 1rem; font-size:clamp(2.2rem,7vw,4rem); line-height:1.12; }
+    .lead { max-width:650px; color:var(--muted); font-size:1.1rem; }
+    .panel { margin-top:38px; padding:26px; border:1px solid #34465d; border-radius:16px; background:rgba(24,36,56,.88); }
+    h2 { margin-top:0; font-size:1.25rem; }
+    .steps { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); }
+    .step { padding:16px; border-radius:12px; background:#202f45; }
+    .number { color:var(--accent); font-weight:800; }
+    a { color:var(--accent); }
+    footer { margin-top:42px; color:var(--muted); font-size:.9rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">Personal learning workspace</div>
+    <h1>Java Experiment Lab</h1>
+    <p class="lead">Javaを学びながら、小さなプログラムを実験・観察するための場所。まずは基礎を確かめ、少しずつゲーム制作にもつなげていきます。</p>
+
+    <section class="panel">
+      <h2>この実験室について</h2>
+      <p>ここでは、コードを書き、実行し、結果を見て、なぜそう動くのかを自分で確かめます。完成を急がず、小さな実験を積み重ねます。</p>
+      <div class="steps">
+        <div class="step"><div class="number">01 / Learn</div><strong>Javaの基礎</strong><br>変数、条件分岐、繰り返し、メソッド、クラス。</div>
+        <div class="step"><div class="number">02 / Experiment</div><strong>動作を確かめる</strong><br>入力や値を変えて、実行結果の違いを観察。</div>
+        <div class="step"><div class="number">03 / Create</div><strong>ゲーム制作へ</strong><br>学んだ処理を組み合わせ、小さなゲームを作る。</div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>学習資料</h2>
+      <ul>
+        <li><a href="https://dev.java/learn/" target="_blank" rel="noopener noreferrer">Dev.java — Learn</a></li>
+        <li><a href="https://learn.java/learning/tutorials/" target="_blank" rel="noopener noreferrer">Java Learning Tutorials</a></li>
+        <li><a href="https://github.com/coreworldyoutube/java-le" target="_blank" rel="noopener noreferrer">この実験室のGitHubリポジトリ</a></li>
+      </ul>
+    </section>
+
+    <footer>Built for learning by doing. 小さく書いて、実行して、理解する。</footer>
+  </main>
+</body>
+</html>
